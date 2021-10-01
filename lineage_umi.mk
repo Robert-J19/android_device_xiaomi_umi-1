@@ -12,7 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
 # Inherit from the Lineage configuration.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/configs/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := lineage_umi
 PRODUCT_DEVICE := umi
