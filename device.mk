@@ -17,6 +17,10 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Dynamic partitions setup
+
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/umi/umi-vendor.mk)
 
